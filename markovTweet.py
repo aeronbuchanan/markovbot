@@ -128,6 +128,10 @@ class MarkovLookup:
         print('Root: ')
         self.tree.display('')
 
+if sys.argv.__len__() < 2:
+    print(sys.argv[0] + ": please provide at least one text source file")
+    exit()
+
 ml = MarkovLookup(2)
 
 # load files
